@@ -260,8 +260,8 @@
         ) {
             // Grab the URL of the website
             var currentURL = window.location.origin;
-            // AJAX post the data to the friends API. 
-            $.post(currentURL + "/api/friends", userData, function(data) {
+            // AJAX post the data to the amigos API. 
+            $.post(currentURL + "/api/amigos", userData, function(data) {
             		// If the data has a match, then show this
                 if (data.name !== undefined) {
                     matchStatus.html('Your match...');
